@@ -2,19 +2,19 @@ package com.driver;
 
 public class Order {
 
-    private String id;
+    private int id;
     private int deliveryTime;
 
-    public Order(String id, int deliveryTime) {
+    public Order(int id, int deliveryTime) {
         this.id = id;
         this.deliveryTime = deliveryTime;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 

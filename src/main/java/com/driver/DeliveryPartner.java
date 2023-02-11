@@ -3,19 +3,19 @@ package com.driver;
 public class DeliveryPartner {
 
 
-    private String id;
+    private int id;
     private int numberOfOrders;
 
-    public DeliveryPartner(String id) {
+    public DeliveryPartner(int id) {
         this.id = id;
         this.numberOfOrders = 0;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
