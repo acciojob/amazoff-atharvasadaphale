@@ -89,6 +89,20 @@ public class OrderRepository {
 
     public int getCountOfUnassignedOrders(){
         return orderNotAssigned.size();
+//        List<Order> orderList = getAllOrders();
+//        Iterator<Order> iterator = orderList.iterator();
+//        while(iterator.hasNext()){
+//            boolean flag = false;
+//            for(String partnerId : partnerOrderMap.keySet()){
+//                if(partnerOrderMap.get(partnerId).contains(iterator.next().getId())){
+//                    flag = true;
+//                    break;
+//                }
+//            }
+//            if(!flag){
+//                count++;
+//            }
+//        }
     }
 
     public int getOrdersLeftAfterGivenTimeByPartnerId(String time, String partnerId){
@@ -111,6 +125,14 @@ public class OrderRepository {
                 }
             }
         }
+//        int minute = 0;
+//        for(int i=1; i<=60; i++){
+//            if((latestTime - i)%60 == 0){
+//                minute = i;
+//                break;
+//            }
+//        }
+//        int restOfTime = latestTime - minute;
         int hours = latestTime/60;
         int minute = latestTime%60;
 

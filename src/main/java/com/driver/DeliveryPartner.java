@@ -2,21 +2,16 @@ package com.driver;
 
 public class DeliveryPartner {
 
-
-    private int id;
+    private String id;
     private int numberOfOrders;
 
-    public DeliveryPartner(int id) {
+    public DeliveryPartner(String id) {
         this.id = id;
         this.numberOfOrders = 0;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public Integer getNumberOfOrders(){
